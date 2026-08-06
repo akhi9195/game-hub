@@ -5,6 +5,7 @@ import { CanceledError } from "axios";
 export interface Game {
   id: number;
   title: string;
+  thumbnail: string;
 }
 
 const useGames = () => {
