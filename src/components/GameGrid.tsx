@@ -5,13 +5,13 @@ import GameCardSkelon from "./GameCardSkelon";
 import GameCardContainer from "./GameCardContainer";
 import type { Genre } from "../hooks/useGenres";
 import type { Platform } from "../hooks/usePlatform";
+import type { GameQuery } from "../App";
 
 interface Props {
-  selectedGenre: Genre | null;
-  selectedPlatform: Platform | null;
+  gameQuery: GameQuery;
 }
-const GameGrid = ({ selectedGenre, selectedPlatform }: Props) => {
-  const { data, error, isLoading } = useGames(selectedGenre, selectedPlatform);
+const GameGrid = ({ gameQuery }: Props) => {
+  const { data, error, isLoading } = useGames(gameQuery);
   const skeltons = Array.from({ length: data.length }, (_, i) => i);
   return (
     <>
