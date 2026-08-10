@@ -1,5 +1,5 @@
-import { HStack, Text } from "@chakra-ui/react";
-import { FaWindows, FaApple, FaPlaystation } from "react-icons/fa";
+import { HStack } from "@chakra-ui/react";
+import { FaWindows, FaApple } from "react-icons/fa";
 import { Icon } from "@chakra-ui/react";
 import type { IconType } from "react-icons";
 interface Props {
