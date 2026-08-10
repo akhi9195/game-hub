@@ -1,6 +1,6 @@
 import useData from "./useData";
 
-interface Platform {
+export interface Platform {
   platform: string;
   value?: string;
 }
@@ -8,6 +8,7 @@ interface Platform {
 const platformMap: Record<string, string> = {
   "PC (Windows)": "windows",
   "Web Browser": "browser",
+  "PC (Windows), Web Browser": "windows&browser",
 };
 
 const usePlatform = () => {
